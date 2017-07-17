@@ -9,173 +9,188 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
 </style>
+
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="../img/Abby_Sepple.jpg" style="width:60%;" class="w3-round" alt="Abby_Sepple"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-    <!-- <p class="w3-text-grey">Template by W3.CSS</p> -->
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-    <!-- this is added for publications -->
-    <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-newspaper-o fa-fw w3-margin-right"></i>PUBLICATIONS</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-    <a class="fa fa-github w3-hover-opacity" style="font-size:36px;" href="https://github.com/AbbySepple"></a>
-    <a class="fa fa-linkedin w3-hover-opacity" style="font-size:36px;" href="https://www.linkedin.com/in/abbysepple/"></a>
-  </div>
-</nav>
+      <img src="../img/Abby_Sepple.jpg" style="width:60%;" class="w3-round" alt="lovely picture of Abby Sepple"><br><br>
+      <h4><b>PORTFOLIO</b></h4>
+      <!-- <p class="w3-text-grey">Template by W3.CSS</p> -->
+    </div>
+    <div class="w3-bar-block">
+      <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+      <!-- this is added for publications -->
+      <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-newspaper-o fa-fw w3-margin-right"></i>PUBLICATIONS</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    </div>
+    <div class="w3-panel w3-large">
+      <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+      <a class="fa fa-github w3-hover-opacity" style="font-size:36px;" href="https://github.com/AbbySepple"></a>
+      <a class="fa fa-linkedin w3-hover-opacity" style="font-size:36px;" href="https://www.linkedin.com/in/abbysepple/"></a>
+    </div>
+  </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
 
-  <!-- Header  Portfolio-->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <!-- <span class="w3-margin-right">Filter:</span> -->
-      <!-- <button class="w3-button w3-black">ALL</button> -->
-      <!-- <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button> -->
-      <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button> -->
-      <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button> -->
-    </div>
-    </div>
-  </header>
+    <!-- Header  Portfolio-->
+    <header id="portfolio">
+      <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1><b>My Portfolio</b></h1>
+        <div class="w3-section w3-bottombar w3-padding-16">
+          <!-- <span class="w3-margin-right">Filter:</span> -->
+          <!-- <button class="w3-button w3-black">ALL</button> -->
+          <!-- <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button> -->
+          <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button> -->
+          <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button> -->
+        </div>
+      </div>
+    </header>
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Westonka SOAR</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="../img/westonka.png" alt="Westonka login screen shot" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Westonka SOAR</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="../img/OurEventsFull.png" alt="Our Events full event view" style="width: 100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Our Events</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="../img/JemnMusic.png" alt="Jemn music project screen shot" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>JEMN Music Challenge</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Our Events</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>JEMN Music Challenge</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Bonus Round Two</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Bonus Round Two</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Mongo Bootstrap Real Estate</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Passport Shelf</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Mongo Bootstrap Real Estate</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Passport Shelf</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Publications -->
-  <header id="publications">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h4><b>Publications</b></h4>
-    <!-- <div class="w3-section w3-bottombar w3-padding-16"> -->
-      <!-- <span class="w3-margin-right">Filter:</span> -->
-      <!-- <button class="w3-button w3-black">ALL</button> -->
-      <!-- <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button> -->
-      <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button> -->
-      <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button> -->
-    <!-- </div> -->
-    </div>
-  </header>
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/5-volunteer-skills-that-will-open-the-door-to-your-dream-job">5 Volunteer Skills That Will Earn You Your Dream Job</a></p>
-        <p>The holiday season is quickly approaching and many of us are looking forward to food, friends, and family- all things in which to be thankful! However, Thanksgiving is also a time for giving back; whether contributing canned good to a local food back, dropping a few dollars in the Salvation Army buckets, or donating your time, there are plenty of organizations looking for help...</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/5-tech-accessories-for-the-on-the-go-employee">5 Tech Accessories for the On-The-Go Employee</a></p>
-        <p>Whether by car, train, bus, or even plane most of us spend countless hours each week commuting. Regardless of your attitude towards your to-and-from work, we can all agree that the act of traveling can be tiresome. Similarly, throw in deadlines, missed flights, and construction delays and stress can all but consume your commute...</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/12-troublesome-work-behaviors-and-tips-for-overcoming-them">12 Troublesome Work Behaviors and Tips for Overcoming Them [SlideShare]</a></p>
-        <p>We stay late, come in early, work over the weekends, and consequently spend innumerable hours with our coworkers. In fact, a 2014 Globoforce study found that 78% of surveyed individuals working 30 to 50 hours per week spent more time with work colleagues than loved ones[1]...</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/18-offbeat-interview-questions-top-ceos-ask">18 Offbeat Interview Questions Top CEO's Ask</a></p>
-        <p>An essential part of the hiring process is the interview. We’re all prepared for the “tell me about yourself" or "what would you identify as your primary strengths", however, I will bet that you have never been asked what would you do in the event of a zombie apocalypse?...</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/3-hiring-myths-debunked">3 Hiring Myths Debunked</a></p>
-        <p>At some point in your career you’ve likely been told there is a ‘simple’ trick for landing a job. This advice has taken many elusive forms- whether in the shape of a well-written cover letter, applying exclusively via a company’s career site, or knowing someone on the inside...</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <div class="w3-container w3-white">
-        <p><a href="https://blog.tajtech.com/4-desktop-items-scientifically-proven-to-boost-your-productivity">4 Desktop Items Scientifically Proven to Boost Your Productivity</a></p>
-        <p>The average U.S. employee works 1790 hours a year[1]. For many of us, that’s nearly 21% of a given year spent consigned to a desk. 1790 hours spent looking at the same computer, over 107,000 minutes within the same walls, and nearly 6.5 million seconds sat pondering projects in your swivel chair...</p>
-      </div>
-    </div>
-  </div>
 
 
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
+    <!-- Publications -->
+    <header id="publications">
+      <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h4><b>Publications</b></h4>
+        <!-- <div class="w3-section w3-bottombar w3-padding-16"> -->
+        <!-- <span class="w3-margin-right">Filter:</span> -->
+        <!-- <button class="w3-button w3-black">ALL</button> -->
+        <!-- <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button> -->
+        <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button> -->
+        <!-- <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button> -->
+        <!-- </div> -->
+      </div>
+    </header>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/5-volunteer-skills-that-will-open-the-door-to-your-dream-job">5 Volunteer Skills That Will Earn You Your Dream Job</a></p>
+          <p>The holiday season is quickly approaching and many of us are looking forward to food, friends, and family- all things in which to be thankful! However, Thanksgiving is also a time for giving back; whether contributing canned good to a local
+            food back, dropping a few dollars in the Salvation Army buckets, or donating your time, there are plenty of organizations looking for help...</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/5-tech-accessories-for-the-on-the-go-employee">5 Tech Accessories for the On-The-Go Employee</a></p>
+          <p>Whether by car, train, bus, or even plane most of us spend countless hours each week commuting. Regardless of your attitude towards your to-and-from work, we can all agree that the act of traveling can be tiresome. Similarly, throw in deadlines,
+            missed flights, and construction delays and stress can all but consume your commute...</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/12-troublesome-work-behaviors-and-tips-for-overcoming-them">12 Troublesome Work Behaviors and Tips for Overcoming Them [SlideShare]</a></p>
+          <p>We stay late, come in early, work over the weekends, and consequently spend innumerable hours with our coworkers. In fact, a 2014 Globoforce study found that 78% of surveyed individuals working 30 to 50 hours per week spent more time with work
+            colleagues than loved ones[1]...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/18-offbeat-interview-questions-top-ceos-ask">18 Offbeat Interview Questions Top CEO's Ask</a></p>
+          <p>An essential part of the hiring process is the interview. We’re all prepared for the “tell me about yourself" or "what would you identify as your primary strengths", however, I will bet that you have never been asked what would you do in the
+            event of a zombie apocalypse?...</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/3-hiring-myths-debunked">3 Hiring Myths Debunked</a></p>
+          <p>At some point in your career you’ve likely been told there is a ‘simple’ trick for landing a job. This advice has taken many elusive forms- whether in the shape of a well-written cover letter, applying exclusively via a company’s career site,
+            or knowing someone on the inside...</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <div class="w3-container w3-white">
+          <p><a href="https://blog.tajtech.com/4-desktop-items-scientifically-proven-to-boost-your-productivity">4 Desktop Items Scientifically Proven to Boost Your Productivity</a></p>
+          <p>The average U.S. employee works 1790 hours a year[1]. For many of us, that’s nearly 21% of a given year spent consigned to a desk. 1790 hours spent looking at the same computer, over 107,000 minutes within the same walls, and nearly 6.5 million
+            seconds sat pondering projects in your swivel chair...</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pagination -->
+    <!-- <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
       <a href="#" class="w3-bar-item w3-black w3-button">1</a>
@@ -186,89 +201,95 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div> -->
 
-  <!-- Images of Me/related things -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <!-- <div class="w3-col m6">
+    <!-- Images of Me/related things -->
+    <div class="w3-row-padding w3-padding-16" id="about">
+      <!-- <div class="w3-col m6">
       <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
     </div>
     <div class="w3-col m6">
       <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
     </div> -->
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>	I refocused 20 weeks of my life to deep dive into computer programing at Prime Digital Academy. In that time I accomplished learning the MEAN Stack, SQL, Bootstrap, Twilio, Google Map API, and more. I am now passionate about UI and Accessibility and continue to add to my skills.</p>
-    <br />
-	  <p>Before Prime I worked in retail for nine plus years mainly working as a Digital Advisor. In that position I worked with a diverse range of coworkers and guests. From that experience I developed the skills needed to actively listen to the needs of others and find the best solutions for those individual needs.</p>
-    <br />
-    <p>In my spare time I enjoy reading manga and have currently read over one thousand series. I also enjoy building Gundam model kits. Though the instructions are in Japanese; a language I do not understand,  there is still a logical sense of assembly. I'm a new home owner and like to take on the challenge of doing as much of the home improvement as possible </p>
-    <hr>
-
-
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>Contact Me</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>abby.sepple@gmail.com</p>
-      </div>
-      <div class="w3-third w3-teal">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Minnesota, US</p>
-      </div>
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>763-647-9486</p>
-      </div>
-    </div>
-    <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-    </form>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
 
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
-    </div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <h4><b>About Me</b></h4>
+      <p> I refocused 20 weeks of my life to deep dive into computer programming at Prime Digital Academy. In that time I accomplished learning the MEAN Stack, SQL, Bootstrap, Twilio, Google Map API, and more. I am now passionate about UI and Accessibility
+        and continue to add to my skills.</p>
+      <br />
+      <p>Before Prime, I worked in retail for nine plus years mainly working as a Digital Advisor. In that position, I worked with a diverse range of coworkers and guests. From that experience, I developed the skills needed to actively listen to the needs
+        of others and find the best solutions for those individual needs.</p>
+      <br />
+      <p>In my spare time, I enjoy reading manga and have currently read over one thousand series. I also enjoy building Gundam model kits. Though the instructions are in Japanese; a language I do not understand, there is still a logical sense of assembly.
+        I'm a new homeowner and like to take on the challenge of doing as much of the home improvement as possible. </p>
+      <hr>
+      <!-- resume button -->
+      <p>
+        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download Resume
+          </button>
+      </p>
 
-    <div class="w3-third">
-      <!-- <h3>POPULAR TAGS</h3>
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-large w3-grey">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+          <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+            <p>abby.sepple@gmail.com</p>
+          </div>
+          <div class="w3-third w3-teal">
+            <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+            <p>Minnesota, US</p>
+          </div>
+          <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+            <p>763-647-9486</p>
+          </div>
+        </div>
+        <hr class="w3-opacity">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input w3-border" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border" type="text" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          </div>
+
+          <div class="w3-third">
+            <h3>BLOG POSTS</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Lorem</span><br>
+                <span>Sed mattis nunc</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Ipsum</span><br>
+                <span>Praes tinci sed</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <!-- <h3>POPULAR TAGS</h3>
       <p>
         <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
@@ -276,28 +297,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
         <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
       </p> -->
+          </div>
+
+        </div>
+      </footer>
+
+
+      <!-- End page content -->
     </div>
 
-  </div>
-  </footer>
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-<!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
 
 </body>
+
 </html>
